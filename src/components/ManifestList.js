@@ -8,11 +8,11 @@ export class ManifestList extends Component {
     const theme = isLightTheme ? light : dark
 
     return (
-      <div className="manifest-list" style={{ background:theme.ui, color:theme.syntax}}>
+      <div className="manifest-list" style={{ background:theme.ui, color:theme.syntax }}>
         <ul>
-          <li>Get a remote, dollar paying job</li>
-          <li>Visit mom whenever</li>
-          <li>save 5k a month</li>
+          <li style={{ background:theme.bg }}>Get a remote, dollar paying job</li>
+          <li style={{ background:theme.bg }}>Visit mom whenever</li>
+          <li style={{ background:theme.bg }}>save 5k a month</li>
         </ul>
       </div>
     )
