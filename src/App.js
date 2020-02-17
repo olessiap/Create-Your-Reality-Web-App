@@ -3,6 +3,7 @@ import './App.css';
 import ManifestList from "./components/ManifestList"
 import Navbar from "./components/Navbar"
 import ThemeContextProvider from './contexts/ThemeContext';
+import ToggleTheme from './components/ToggleTheme';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
      <ThemeContextProvider>
         <Navbar />
         <ManifestList />
+        <ToggleTheme />
      </ThemeContextProvider>
     </div>
   );
