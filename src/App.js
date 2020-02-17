@@ -2,13 +2,16 @@ import React from 'react';
 import './App.css';
 import ManifestList from "./components/ManifestList"
 import Navbar from "./components/Navbar"
+import ThemeContexProvider from './contexts/ThemeContextProvider';
 
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <ManifestList />
+     <ThemeContexProvider>
+        <Navbar />
+        <ManifestList />
+     </ThemeContexProvider>
     </div>
   );
 }
