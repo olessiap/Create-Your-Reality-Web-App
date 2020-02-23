@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import ThemeContextProvider from './contexts/ThemeContext';
 import ToggleTheme from './components/ToggleTheme';
 import AuthContextProvider from './contexts/AuthContext';
+import ManifestContextProvider from './contexts/ManifestContext';
 
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     <ThemeContextProvider>
       <AuthContextProvider>
         <Navbar />
-        <ManifestList />
+        <ManifestContextProvider>
+          <ManifestList />
+        </ManifestContextProvider>
         <ToggleTheme />
       </AuthContextProvider>
      </ThemeContextProvider>
