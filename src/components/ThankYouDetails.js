@@ -4,10 +4,10 @@ import { ThankYouContext } from '../contexts/ThankYouContext';
 
 const ThankYouDetails = ({ thankYou}) => {
   const { isLightTheme, dark, light } = useContext(ThemeContext)
-  const { removeThankYou } = useContext(ThankYouContext)
+  const { dispatch } = useContext(ThankYouContext)
   const theme = isLightTheme ? light : dark
   return(
-    <li onClick={()=>removeThankYou(thankYou.id)} style={{background:theme.ui}}>{thankYou.title}</li>
+    <li onClick={()=>dispatch({type:'REMOVE_THANKYOU', id: thankYou.id})} style={{background:theme.ui}}>{thankYou.title}</li>
   )
 }
 
