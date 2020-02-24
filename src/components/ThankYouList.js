@@ -7,7 +7,7 @@ const ThankYouList = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext)
   const { thankYous } = useContext(ThankYouContext)
   const theme = isLightTheme ? light : dark
-  return (
+  return thankYous.length ? (
     <div className="thank-you-list" style={{background:theme.bg, color:theme.syntax}}>
       <ul>
         {thankYous.map(item => {
@@ -15,6 +15,8 @@ const ThankYouList = () => {
         })}
       </ul>
     </div>
+  ) : (
+    <div className="empty" style={{background:theme.bg, color:theme.syntax}}>Add 10 things you're greatful for today</div>// do crazy analytics later 
   )
 }
 
