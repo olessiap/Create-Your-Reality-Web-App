@@ -6,6 +6,7 @@ import ToggleTheme from './components/ToggleTheme';
 import AuthContextProvider from './contexts/AuthContext';
 import ThankYouContextProvider from './contexts/ThankYouContext';
 import ThankYouList from './components/ThankYouList';
+import ThankYouForm from './components/ThankYouForm';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <ToggleTheme />
           <Navbar /> 
           <ThankYouList />
+          <ThankYouForm />
         </ThankYouContextProvider>
       </AuthContextProvider>
     </ThemeContextProvider>
