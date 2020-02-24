@@ -19,17 +19,17 @@ nav ul li {
   /* padding:5px; */
 }
 
-.manifest-list {
+.thank-you-list {
   padding:20px;
   margin-bottom:20px;
 }
 
-.manifest-list ul {
+.thank-you-list ul {
   padding:0;
   list-style-type: none;
 }
 
-.manifest-list li {
+.thank-you-list li {
   padding:10px;
   margin:10px auto;
   border-radius: 10px;
