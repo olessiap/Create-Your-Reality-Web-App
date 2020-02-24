@@ -10,7 +10,7 @@ const ThankYouContextProvider = (props) => {
     {title: "for the desk", id:3}
   ])
   const addThankYou = (title) => {
-    setThankYou([...thankYous, {title, id:uuid()}])
+   setThankYou([...thankYous, {title, id:uuid()}]) 
   }
   const removeThankYou = (id) => {
     setThankYou(thankYous.filter( item => item.id !== id))

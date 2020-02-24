@@ -11,8 +11,12 @@ const ThankYouForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    addThankYou(title)
-    setTitle('')
+    if(title.length > 0) {
+      addThankYou(title)
+      setTitle('')
+    }else {
+      console.log("empty thank you")
+    }
   }
 
   return (
