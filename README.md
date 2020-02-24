@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Install
 
     $ git clone https://github.com/olessiap/Create-Your-Reality-Web-App.git
-    $ cd Github-Top-Starred-Repositories
+    $ cd into the project
     $ npm install
 
 ## Start & watch
