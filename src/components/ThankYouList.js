@@ -11,7 +11,7 @@ const ThankYouList = () => {
     <div className="thank-you-list" style={{background:theme.bg, color:theme.syntax}}>
       <ul>
         {thankYous.map(item => {
-          return <ThankYouDetails key={item.id} thankYou={item.title} />
+          return <ThankYouDetails key={item.id} thankYou={item} />
         })}
       </ul>
     </div>

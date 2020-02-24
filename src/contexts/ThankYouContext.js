@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react'
+import uuid from 'uuid/v1'
 
 export const ThankYouContext = createContext()
 
@@ -8,14 +9,14 @@ const ThankYouContextProvider = (props) => {
     {title: "for the plantitas", id:2},
     {title: "for the desk", id:3}
   ])
-  // addThankYou = (thankYou) => {
-  //   setThankYou(...thankYous, thankYou)
-  // }
-  // removeThankYou = (id) => {
-  //   thankYous.filter(() => thankYou.id !== id)
-  // }
+  const addThankYou = (title) => {
+    setThankYou([...thankYous, {title, id:uuid()}])
+  }
+  const removeThankYou = (id) => {
+    setThankYou(thankYous.filter( item => item.id !== id))
+  }
   return (
-    <ThankYouContext.Provider value={{thankYous}}>
+    <ThankYouContext.Provider value={{thankYous, addThankYou, removeThankYou}}>
       {props.children}
     </ThankYouContext.Provider>
   )
