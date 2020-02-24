@@ -5,7 +5,7 @@ const ToggleTheme = () => {
   const { toggleTheme } = useContext(ThemeContext)
 
   return(
-    <button onClick={toggleTheme}>Change Theme</button>
+    <button className="theme-button" onClick={toggleTheme}>Change Theme</button>
   )
 }
 export default ToggleTheme

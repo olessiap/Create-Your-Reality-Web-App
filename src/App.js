@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Navbar from "./components/Navbar"
 import ThemeContextProvider from './contexts/ThemeContext';
 import ToggleTheme from './components/ToggleTheme';
